@@ -143,7 +143,7 @@ function Tuner(){
             var newCandidates = [];
             for(var i = 0; i < 30; i++){ // 30% of population
                 var pair = tournamentSelectPair(candidates, 10); // 10% of population
-                //console.log('fitnesses = ' + pair[0].fitness + ',' + pair[1].fitness);
+                console.log('fitnesses = ' + pair[0].fitness + ',' + pair[1].fitness);
                 var candidate = crossOver(pair[0], pair[1]);
                 if(Math.random() < 0.05){// 5% chance of mutation
                     mutate(candidate);
